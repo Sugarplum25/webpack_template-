@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    
+  body
+    h1(class="title") Pug - it is something weird
+    div(class="container")
+      ul
+        -let url = "https://lh3.googleusercontent.com/proxy/5FCQ5DQj_2jljcC-ij1mjuG_Ol7tuK2FPT1gqoG1ZQ1icxJ2pBtg_NY5HjZM97QQ141DH0vNHwSFuQCFNeMtX0MlZ3dSESa_7WyZPQaL7woePx3SlXA6EONg8yfMGdxwS1Guwa0";
+        -let style = "width: 350px";
+        li
+           p Hi!
+           img(src = url, style = style, alt="енот")
+        li
+          p Hi again!
+          img(src = url, style = style, alt="енот")
+        li
+          p Aloha!
+          img(src = url, style = style, alt="енот")

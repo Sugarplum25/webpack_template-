@@ -1,12 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 module.exports = {
-  entry: ['./src/js/index.js'],
+  entry: ['./src/scss/main.scss'],
   output: {
-    filename: '[name].js',
+    filename: '[name].html',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -40,9 +39,7 @@ module.exports = {
     port: 3000,
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/pug/index.pug'
     }),

@@ -1,20 +1,51 @@
 doctype html
-html(lang="en")
+html(lang="ru")
   head
-    title Thit is pug
+    meta(charset="utf-8")
+    title EnergoValves Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
     
   body
-    h1(class="title") Pug - it is something weird
-    div(class="container")
-      ul
-        -let url = "https://static.mk.ru/upload/entities/2015/08/10/articles/detailPicture/6e/0c/65/829952131_3022582.jpg";
-        -let style = "width: 350px";
-        li
-           p Hi!
-           img(src = url, style = style, alt="енот")
-        li
-          p Hi again!
-          img(src = url, style = style, alt="енот")
-        li
-          p Aloha!
-          img(src = url, style = style, alt="енот")
+    header
+      div(class="header__container")
+        -let logo_img = "../src/img/group.svg";
+        div(class="logo")
+          a(href="#" class="logo__link")
+            img(src= logo_img, alt="EnergoValves_logo" class="logo__image")
+          p(class="logo__text") EnergoValves ЭНЕРГИЯ ВОЗМОЖНОСТЕЙ
+        nav(class="menu")
+          ul(class="menu menu__block")
+            li
+              a(href="#" class="menu menu__link") Каталог
+            li
+              a(href="#" class="menu menu__link") О компании
+            li
+              a(href="#" class="menu menu__link") Георграфия проектов 
+            li
+              a(href="#" class="menu menu__link") Контакты
+        div(class="phone")
+          a(href="tel:8 499 426-45-05" class="phone phone__link") 8 499 426-45-05
+
+    main 
+      section(class="about")
+        div(class="about about__info")
+          p(class="about about__text") Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
+          a(href="#" class="catalog__link") Посмотреть каталог
+        div(class="about about__image")
+          img(src="../src/img/factory.png", alt="factory")
+      section(class="services")
+        h2(class="services__title") Услуги
+        ul(class="services services__list")
+          li(class="services services__item") Подбор и расчет оборудования (как типового, так и в особом исполнении)
+          li(class="services services__item") Контроль изготовления и своевременной отгрузки оборудования с завода 
+          li(class="services services__item") Таможенное оформление (при необходимости)
+          li(class="services services__item") Доставка оборудования
+          li(class="services services__item") Шеф-монтаж, шеф-наладка
+          li(class="services services__item") Обучение персонала
+          li(class="services services__item") Гарантийное и сервисное обслуживание                          
+
+
+
+
+
+
+  

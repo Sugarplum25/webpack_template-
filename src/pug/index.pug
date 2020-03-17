@@ -5,7 +5,9 @@ html(lang="ru")
     title EnergoValves Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
     
   body
+
     header
+
       div(class="header__container")
         -let logo_img = "../src/img/group.svg";
         div(class="logo")
@@ -22,49 +24,133 @@ html(lang="ru")
               a(href="#" class="menu menu__link") Георграфия проектов 
             li
               a(href="#" class="menu menu__link") Контакты
-        div(class="phone")
-          a(href="tel:8 499 426-45-05" class="phone phone__link") 8 499 426-45-05
 
-    main 
+        div(class="phone")
+          a(href="tel:84994264505" class="phone phone__link") 8 499 426-45-05
+
+    main(class="main__content")
+
       section(class="about")
+
         div(class="about about__info")
-          p(class="about about__text") Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
+          h1(class="title about__title") Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
           a(href="#" class="catalog__link") Посмотреть каталог
+
         div(class="about about__image")
           img(src="../src/img/factory.png", alt="factory")
 
       section(class="services")
-        h2(class="services__title") Услуги
+
+        h2(class="title") Услуги
+
         ul(class="services services__list")
           li(class="services services__item")
             img(src="../src/img/icons/podbor.svg", alt="podbor" class="services services__image")
             p(class="services servises__text") Подбор и расчет оборудования (как типового, так и в особом исполнении)
+
           li(class="services services__item")
             img(src="../src/img/icons/kontrol.svg", alt="kontrol" class="services services__image")
             p(class="services servises__text") Контроль изготовления и своевременной отгрузки оборудования с завода
+
           li(class="services services__item") 
             img(src="../src/img/icons/tamojna.svg", alt="tamojna" class="services services__image")
             p(class="services servises__text") Таможенное оформление (при необходимости)
+
           li(class="services services__item") 
             img(src="../src/img/icons/dostavka.svg", alt="dostavka" class="services services__image")
             p(class="services servises__text") Доставка оборудования
+
           li(class="services services__item") 
             img(src="../src/img/icons/montaj.svg", alt="montaj" class="services services__image")
             p(class="services servises__text") Шеф-монтаж, шеф-наладка
+
           li(class="services services__item") 
             img(src="../src/img/icons/obuchenie.svg", alt="obuchenie" class="services services__image")
             p(class="services servises__text") Обучение персонала
+
           li(class="services services__item") 
             img(src="../src/img/icons/garant.svg", alt="garant" class="services services__image")
             p(class="services servises__text") Гарантийное и сервисное обслуживание
 
       section(class="customers")
-              
 
+        h2(class="title") Заказчики
 
+        div(class="customers customers__container")
 
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_mosenergo.png", alt="mosenergo" class="customers customers__image")
+            
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_lukoil.png", alt="lukoil" class="customers customers__image")
 
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_silovie_mashini.png", alt="silovie_mashini" class="customers customers__image")
 
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_raoees.png", alt="raoees" class="customers customers__image")
 
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_rusgidro.png", alt="rusgidro" class="customers customers__image")
 
-  
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_eurohim.png", alt="eurohim" class="customers customers__image")
+
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_tekmosenergo.png", alt="tekmosenergo" class="customers customers__image")
+
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_sibur.png", alt="sibur" class="customers customers__image")
+
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_severstal.png", alt="severstal" class="customers customers__image")
+
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_gencomparny.png", alt="gencomparny" class="customers customers__image")
+
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_tashir.png", alt="tashir" class="customers customers__image")
+
+          div(class="customers customers__item")
+            img(src="../src/img/customers/logo_red_kot.png", alt="red_kot" class="customers customers__image") 
+
+      section(class="features")
+
+        h2(class="title") Преимущества
+        ul(class="features__list")
+
+          li(class="features__item")
+            img(src="../src/img/features/partnership.svg", alt="partnership")
+            h3(class="title features__title") Долгосрочное сотрудничество
+            p(class="features features__text") Большинство заказчиков неоднократно обращаются к нам с новыми заявками на оборудование.
+
+          li(class="features__item")
+            img(src="../src/img/features/active_presence.svg", alt="active_presence")
+            h3(class="title features__title") Активное присутствие на рынке
+            p(class="features features__text")  Участвуем в 80% проектов строительства энергетических объектов, реализуемых в настоящее время в России.
+
+          li(class="features__item")
+            img(src="../src/img/features/ddp_delivery.svg", alt="ddp_delivery")
+            h3(class="title features__title") Поставка на условиях DDP
+            p(class="features features__text") Берем на себя все таможенные и транспортные обязательства. Вам остается только принять оборудование у себя на складе.
+
+          li(class="features__item")
+            img(src="../src/img/features/work_experience.svg", alt="work_experience")
+            h3(class="title features__title") Опыт работы
+            p(class="features features__text") В период с 2011 по 2019 год мы исполнили более 180 контрактов на поставку 15000 единиц оборудования в 7 федеральных округов РФ, а также в 6 стран Евросоюза и СНГ.
+
+          li(class="features__item")
+            img(src="../src/img/features/quality_equipment.svg", alt="quality_equipment")
+            h3(class="title features__title") Качественное оборудование
+            p(class="features features__text") Поставляем надежную трубопроводную арматуру лучших европейских заводов с многолетними традициями производства. Оборудование, которое ценят проектировщики и эксплуатирующие организации. 
+          
+          li(class="features__item")
+            img(src="../src/img/features/engagements.svg", alt="engagements")
+            h3(class="title features__title") Выполнение обязательств
+            p(class="features features__text") На оборудование предоставляется заводская гарантия. И даже поcле окончания гарантийного срока, мы остаемся с вами на связи. Не беспокойтесь, мы поможем восстановить потерянную документацию и решить любой другой вопрос по оборудованию.
+    
+    footer(class="footer")
+      div(class="footer__container")
+        p(class="footer__copyright") © 2011–2020 EnergoValves
+        a(href="https://parkside.agency/" class="footer__link") Сайт создан в PARKSIDE
+      

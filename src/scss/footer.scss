@@ -27,5 +27,23 @@
 @media (max-width: 1023px) and (min-width: 834px) {
     .footer__container {
         max-width: 727px;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 833px) and (min-width: 678px) {
+    .footer__container {
+        max-width: 634px;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 767px) and (min-width: 375px) {
+    .footer__container {
+        max-width: 365px;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 374px) {
+    .footer__container {
+        font-size: 0.63rem;
     }
 }

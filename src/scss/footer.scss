@@ -16,10 +16,16 @@
 }
 .footer__link {
     display: block;
+    color: $main-color;
+    
 }
 @media (max-width: 1439px) and (min-width: 1024px) {
     .footer__container {
         max-width: 916px;
-        font-size: 0.75rem;
-    } 
+    }
+}
+@media (max-width: 1023px) and (min-width: 834px) {
+    .footer__container {
+        max-width: 727px;
+    }
 }

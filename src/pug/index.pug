@@ -4,32 +4,13 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title EnergoValves Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet")
 
   body
 
-    header(class="header")
-
-      div(class="header__container")
-        -let logo_img = "../src/img/group.svg";
-        div(class="logo header__logo")
-          a(href="#" class="logo__link")
-            img(src= logo_img, alt="EnergoValves_logo" class="logo__image")
-          p(class="logo__text") EnergoValves ЭНЕРГИЯ ВОЗМОЖНОСТЕЙ
-
-        nav(class="menu header__menu")
-          ul(class="menu__block")
-            li(class="menu__item")
-              a(href="#" class="menu__link") Каталог
-            li(class="menu__item")
-              a(href="#" class="menu__link") О компании
-            li(class="menu__item")
-              a(href="#" class="menu__link") Георграфия проектов 
-            li(class="menu__item")
-              a(href="#" class="menu__link") Контакты
-
-        div(class="phone header__phone")
-          a(href="tel:84994264505" class="phone__link") 8 499 426-45-05
-
+    include header.pug
+  
     main(class="main__content")
 
       section(class="about")
@@ -150,8 +131,5 @@ html(lang="ru")
             img(src="../src/img/features/engagements.svg", alt="engagements" class="features__image")
             h3(class="title features__title") Выполнение обязательств
             p(class="features__text") На оборудование предоставляется заводская гарантия. И даже поcле окончания гарантийного срока, мы остаемся с вами на связи. Не беспокойтесь, мы поможем восстановить потерянную документацию и решить любой другой вопрос по оборудованию.
-
-    footer(class="footer")
-      div(class="footer__container")
-        p(class="footer__copyright") © 2011–2020 EnergoValves
-        a(href="https://parkside.agency/" class="footer__link") Сайт создан в PARKSIDE
+    
+    include footer.pug

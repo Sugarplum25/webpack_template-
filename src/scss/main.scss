@@ -1,6 +1,49 @@
+$main-size: 1em;
+$main-font: 'Roboto', sans-serif;
+$add-font: 'Raleway', sans-serif;
+$main-color: #000F40;
+$add-color: #E5EBFF;
+$zero-margin: 0;
+$zero-padding: 0;
+
 body {
-    font-size: 1em;
+    font-size: $main-size;
+    font-family: $main-font;
+    color: $main-color;
+    margin: $zero-margin;
 }
+
 ul {
     list-style-type: none;
 }
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: $main-size * 3;
+    font-family: $add-font;
+}
+.main__content {
+    width: 100%;
+    max-width: 1200px;
+}
+.about {
+    display: flex;
+}
+.services__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.customers__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+@import 'header.scss', 'footer.scss'
+
+

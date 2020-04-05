@@ -21,36 +21,30 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    font-size: $main-size * 3;
-    font-family: $add-font;
-}
-// .main__content {
-//     width: 100%;
-//     max-width: 1100px;
-//     margin: auto;
-// }
 .title {
-    font-size: 1.4rem;
     margin: $zero-margin;
+    font-size: 3rem;
+    font-family: $add-font;
+    font-weight: bold;
+    line-height: 120%;
 }
 .about {
     display: flex;
+    margin: auto;
     justify-content: space-around;
     padding-bottom: 126px;
     padding-top: 125px;
     width: 100%;
     max-width: 1100px;
-    margin: auto;
-
 }
 .about__block {
-    width: 50%;
+    width: 49%;
 }
 .about__title {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 150%;
+    margin-right: 49px;
     margin-bottom: 24px;
 }
 .catalog__link {
@@ -66,7 +60,7 @@ h2 {
 .about__image {
     width: 446px;
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .services {
@@ -80,9 +74,6 @@ h2 {
 }
 .services__title {
     color: #E5EBFF;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 120%;
 }
 .services__list {
     display: flex;
@@ -108,43 +99,85 @@ h2 {
     line-height: 150%;
     color: #E5EBFF;
 }
+.customers {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    margin: auto;
+}
+.customers__title {
+    color: #000F40;
+}
 .customers__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .customers__image {
+    width: 257px;
+    height: 140px;
     display: block;
     max-width: 100%;
-    height: auto;
+}
+.features {
+    background: linear-gradient(0deg, #000F40, #000F40);
+}
+.features__container {
+    margin: auto;
 }
 .features__list {
     display: flex;
     flex-wrap: wrap;
 }
+.features__item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.features__title {
+    color: #E5EBFF;
+}
+.features__image {
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+}
+.features__text {
+    color:#E5EBFF;
+}
 @media (max-width: 1439px) and (min-width: 1024px) {
-    .about, .services__container {
+    .about, .services__container, .customers, .features__container {
         max-width: 916px;
     }
 }
 @media (max-width: 1023px) and (min-width: 834px) {
-    .services__container {
+    .about, .services__container, .customers, .features__container {
         max-width: 727px;
+    }
+    .title {
+        font-size: 2.63rem;
+    }
+    .about__block {
+        width: 48%;
+    }
+    .catalog__link {
+        font-size: 0.88rem;
     }
 }
 @media (max-width: 833px) and (min-width: 678px) {
-    .about, .services__container {
+    .about, .services__container, .customers, .features__container {
         max-width: 634px;
+    }
+    .about__title {
+        font-size: 1rem;
     }
 }
 @media (max-width: 767px) and (min-width: 375px) {
-    .about, .services__container {
+    .about, .services__container, .customers, .features__container {
         max-width: 351px;
     }
-    .about {
-        flex-direction: column;
+    .title {
+        font-size: 2.25rem;
     }
-        .about {
+    .about {
         flex-direction: column-reverse;
         padding-top: 60px;
         padding-bottom: 73px;
@@ -163,29 +196,39 @@ h2 {
         line-height: 1rem;
         padding: 13px 23px;
     }
+    .services__container {
+        padding: 60px 0 43px 0;
+    }
 }
 @media (max-width: 374px) {
-    .about, .services__container {
+    .about, .services__container, .customers, .features__container {
         max-width: 258px;
+    }
+    .title {
+        font-size: 1.75rem;
     }
     .about {
         flex-direction: column-reverse;
-        padding-top: 60px;
-        padding-bottom: 73px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .about__block {
         width: 100%;
     }
     .about__title {
-        font-size: 1rem;
-        padding-top: 24px;
-        padding-bottom: 16px;
+        font-size: 0.88rem;
+        margin: $zero-margin;
+        padding: 12px 31px;
     }
     .catalog__link {
-        width: 50%;
+        width: 49%;
         font-size: 0.75rem;
         line-height: 0.87rem;
         padding: 11px 21px;
+        margin-left: 31px;
+    }
+    .services__container {
+        padding: 40px 0 40px 0;
     }
 }
 

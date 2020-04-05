@@ -141,10 +141,51 @@ h2 {
     .about, .services__container {
         max-width: 351px;
     }
+    .about {
+        flex-direction: column;
+    }
+        .about {
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        padding-bottom: 73px;
+    }
+    .about__block {
+        width: 100%;
+    }
+    .about__title {
+        font-size: 1rem;
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+    .catalog__link {
+        width: 48%;
+        font-size: 0.88rem;
+        line-height: 1rem;
+        padding: 13px 23px;
+    }
 }
 @media (max-width: 374px) {
     .about, .services__container {
         max-width: 258px;
+    }
+    .about {
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        padding-bottom: 73px;
+    }
+    .about__block {
+        width: 100%;
+    }
+    .about__title {
+        font-size: 1rem;
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+    .catalog__link {
+        width: 50%;
+        font-size: 0.75rem;
+        line-height: 0.87rem;
+        padding: 11px 21px;
     }
 }
 

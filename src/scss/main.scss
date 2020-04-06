@@ -80,27 +80,32 @@ a {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding: 0;
     margin-top: 40px;
 }
 .services__item {
     max-width: 444px;
     display: flex;
-    flex: 0 0 50%;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 44%;
+    margin-bottom: 32px;
+    margin-right: 24px;
 }
 .services__image {
     width: 70px;
     height: 70px;
     margin-right: 24px;
-    margin-bottom: 32px;
 }
 .servises__text {
-    vertical-align: baseline;
+    margin: $zero-margin;
     font-size: 1rem;
     line-height: 150%;
     color: #E5EBFF;
 }
 .customers {
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    padding: 80px 0 80px 0;
     margin: auto;
 }
 .customers__title {
@@ -108,32 +113,56 @@ a {
 }
 .customers__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-top: 40px;
 }
-.customers__image {
+.customers__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 257px;
     height: 140px;
+    margin: 0 24px 32px 0;
+}
+.customers__image {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 .features {
     background: linear-gradient(0deg, #000F40, #000F40);
 }
 .features__container {
+    width: 100%;
+    max-width: 1100px;
     margin: auto;
+    padding: 80px 0;
+}
+.features__title {
+    color: #E5EBFF;
 }
 .features__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    margin-top: 40px;
+}
+.features__subtitle {
+    color: #E5EBFF;
+    font-size: 1.375rem;
+    line-height: 160%;
+    font-weight: bold;
+    margin: $zero-margin;
+    margin-top: 32px;
 }
 .features__item {
     display: flex;
     flex-direction: column;
-    width: 30%;
-}
-.features__title {
-    color: #E5EBFF;
+    margin-right: 25px;
+    margin-bottom: 48px;
+    width: 45%;
 }
 .features__image {
     width: 220px;
@@ -142,6 +171,10 @@ a {
 }
 .features__text {
     color:#E5EBFF;
+    font-size: 1rem;
+    line-height: 150%;
+    margin: $zero-margin;
+    margin-top: 8px;
 }
 @media (max-width: 1439px) and (min-width: 1024px) {
     .about, .services__container, .customers, .features__container {
@@ -161,6 +194,18 @@ a {
     .catalog__link {
         font-size: 0.88rem;
     }
+    .customers__item {
+        width: 226px;
+        height: 123px;
+        margin-right: 16px;
+        margin-bottom: 32px;
+    }
+    .features__subtitle {
+        font-size: 1.125rem;
+    }
+    .features__text {
+        font-size: 0.875rem;
+    }
 }
 @media (max-width: 833px) and (min-width: 678px) {
     .about, .services__container, .customers, .features__container {
@@ -168,6 +213,12 @@ a {
     }
     .about__title {
         font-size: 1rem;
+    }
+    .customers__item {
+        width: 195px;
+        height: 106px;
+        margin-right: 16px;
+        margin-bottom: 32px;
     }
 }
 @media (max-width: 767px) and (min-width: 375px) {
@@ -199,6 +250,31 @@ a {
     .services__container {
         padding: 60px 0 43px 0;
     }
+    .services__list {
+        flex-direction: column;
+    }
+    .servises__text {
+        font-size: 0.875rem;
+    }
+    .customers {
+        padding: 60px 0;
+    }
+    .customers__item {
+        width: 164px;
+        height: 90px;
+        margin-right: 11px;
+        margin-bottom: 24px;
+    }
+    .features__container {
+        padding: 60px 0;
+    }
+    .features__item {
+        width: 100%;
+    }
+    .features__image {
+        width: 164px;
+        height: 164px;
+    }
 }
 @media (max-width: 374px) {
     .about, .services__container, .customers, .features__container {
@@ -229,6 +305,38 @@ a {
     }
     .services__container {
         padding: 40px 0 40px 0;
+    }
+    .services__list {
+        flex-direction: column;
+    }
+    .servises__text {
+        font-size: 0.75rem;
+    }
+    .customers {
+        padding: 40px 0;
+    }
+    .customers__item {
+        width: 117px;
+        height: 64px;
+        margin: 0;
+        margin-right: 12px;
+        margin-bottom: 24px;
+    }
+    .features__container {
+        padding: 40px 0;
+    }
+    .features__item {
+        width: 100%;
+    }
+    .features__image {
+        width: 117px;
+        height: 117px;
+    }
+    .features__subtitle {
+        font-size: 1rem;
+    }
+    .features__text {
+        font-size: 0.75rem;
     }
 }
 

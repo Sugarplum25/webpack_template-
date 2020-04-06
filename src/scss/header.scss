@@ -5,8 +5,8 @@
 .header__container {
     max-width: 1100px;
     height: 80px;
-    margin: 0 auto;
     display: flex;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -55,6 +55,17 @@
     padding: 0 1em;
     line-height: 1.2rem;
     color: $main-color;
+}
+.phone {
+    display: flex;
+    align-items: center;
+}
+.phone__status {
+    width: 8px;
+    height: 8px;
+    background: #29CC5F;
+    border-radius: 50%;
+    margin-right: 8px;    
 }
 .phone__link {
     color: $main-color;
@@ -120,6 +131,9 @@
     .phone__sigh {
         display: block;
     }
+    .phone__status {
+        align-self: flex-end;
+    }
 }
 @media (max-width: 374px) {
     .header__container {
@@ -139,5 +153,8 @@
     }
     .phone__sigh {
         display: block;
+    }
+    .phone__status {
+        align-self: flex-end;
     }
 }

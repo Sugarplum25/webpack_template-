@@ -1,0 +1,125 @@
+@import 'variables.scss';
+
+.customers {
+  background: linear-gradient(0deg, #fff, #fff);
+  margin: auto;
+  max-width: 1100px;
+  padding: 5rem 0;
+}
+
+.customers__title {
+  color: #000f40;
+  font-family: $add-font;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 120%;
+  margin: $zero-margin;
+}
+
+.customers__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2.5rem;
+  max-width: 1100px;
+}
+
+.customers__item {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  width: 257px;
+}
+
+.customers__image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .customers {
+    max-width: 916px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 834px) {
+  .customers {
+    max-width: 727px;
+  }
+
+  .customers__title {
+    font-size: 2.63rem;
+  }
+
+  .customers__item {
+    height: 123px;
+    margin-bottom: 32px;
+    margin-right: 16px;
+    width: 226px;
+  }
+}
+
+@media (max-width: 833px) and (min-width: 678px) {
+  .customers {
+    max-width: 634px;
+  }
+
+  .customers__item {
+    height: 106px;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    width: 195px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+  .customers {
+    padding: 3.75rem 0;
+  }
+
+  .customers__title {
+    font-size: 2.25rem;
+    margin-left: 0.75rem;
+  }
+
+  .customers__container {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .customers__item {
+    height: 90px;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    width: 164px;
+  }
+}
+
+@media (max-width: 374px) {
+  .customers {
+    padding: 3.75rem 0;
+  }
+
+  .customers__title {
+    font-size: 1.75rem;
+    margin-left: 0.75rem;
+  }
+
+  .customers__container {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .customers__item {
+    height: 64px;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    width: 117px;
+  }
+}

@@ -1,160 +1,266 @@
+@import 'variables.scss';
+
 .header {
-    background: #FFFFFF;
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  color: $main-color;
+  font-family: $main-font;
+  font-size: $main-size;
 }
+
 .header__container {
-    max-width: 1100px;
-    height: 80px;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1100px;
 }
+
 .header__burger {
-    display: none;
-    width: 26px;
-    height: 10px;
-    border-top: 2px solid  #000F40;
-    border-bottom: 2px solid #000F40;
-    border-radius: 2px;
+  border-bottom: 2px solid #000f40;
+  border-radius: 2px;
+  border-top: 2px solid  #000f40;
+  display: none;
+  height: 10px;
+  width: 26px;
 }
+
 .header__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+  text-align: center;
 }
-.logo__link {
-    margin-right: 12px;
+
+.header__text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.logo__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.header__text-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  margin: $zero-margin;
 }
-.logo__text-name {
-    margin: $zero-margin;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.75rem;
+
+.header__text-caption {
+  font-size: 0.635rem;
+  letter-spacing: 0.09em;
+  line-height: 0.75rem;
+  margin: $zero-margin;
 }
-.logo__text-caption {
-    margin: $zero-margin;
-    font-size: 0.635rem;
-    line-height: 0.75rem;
-    letter-spacing: 0.09em;
-}
+
 .header-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: $zero-padding;
-    padding-left: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: $zero-padding;
+  padding-left: 0;
 }
-.menu__item {
-    padding: 0 1em;
-    line-height: 1.2rem;
-    color: $main-color;
+
+.header__menu-item {
+  color: $main-color;
+  line-height: 1.2rem;
+  margin-right: 0.75rem;
+  padding: 0 1em;
 }
-.phone {
-    display: flex;
-    align-items: center;
+
+.header__phone {
+  align-items: center;
+  display: flex;
 }
-.phone__status {
-    width: 8px;
-    height: 8px;
-    background: #29CC5F;
-    border-radius: 50%;
-    margin-right: 8px;    
+
+.header__phone-status {
+  background: #29cc5f;
+  border-radius: 50%;
+  height: 8px;
+  margin-right: 0.5rem;
+  width: 8px;
 }
-.phone__link {
-    color: $main-color;
-    font-size: 1.25rem;
-    line-height: 1.43rem;
+
+.header__phone-link {
+  color: $main-color;
+  font-size: 1.25rem;
+  line-height: 1.43rem;
+  text-decoration: none;
 }
-.phone__sigh {
-    display: none;
+
+.header__phone-sigh {
+  display: none;
 }
+
 @media (max-width: 1439px) and (min-width: 1024px) {
-    .header__container {
-        max-width: 916px;
-    }
-    .header__menu {
-        display: none;
-    }
-    .header__burger {
-        display: block;
-    }
+  .header__container {
+    max-width: 916px;
+  }
+
+  .header__logo {
+    order: 2;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__phone {
+    order: 3;
+  }
 }
+
 @media (max-width: 1023px) and (min-width: 834px) {
-    .header__container {
-        max-width: 727px;
-    }
-    .header__menu {
-        display: none;
-    }
-    .header__burger {
-        display: block;
-    }
-    .phone__link {
-        font-size: 1.125rem;
-        line-height: 1.3rem;
-    }
+  .header__container {
+    height: 60px;
+    max-width: 727px;
+  }
+
+  .header__logo {
+    order: 2;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__image {
+    height: 34px;
+    width: 34px;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__phone {
+    order: 3;
+  }
+
+  .header__phone-link {
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+  }
 }
+
 @media (max-width: 833px) and (min-width: 678px) {
-    .header__container {
-        max-width: 634px;
-    }
-    .header__menu {
-        display: none;
-    }
-    .header__burger {
-        display: block;
-    }
+  .header__container {
+    max-width: 634px;
+  }
+
+  .header__logo {
+    order: 2;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__phone {
+    order: 3;
+  }
+
+  .header__phone-link {
+    color: #000f40;
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+    text-decoration: none;
+  }
 }
+
 @media (max-width: 767px) and (min-width: 375px) {
-    .header__container {
-        max-width: 351px;
-    }
-    .header__menu {
-        display: none;
-    }
-    .header__burger {
-        display: block;
-    }
-    .logo__text {
-        display: none;
-    }
-    .phone__link {
-        display: none;
-    }
-    .phone__sigh {
-        display: block;
-    }
-    .phone__status {
-        align-self: flex-end;
-    }
+  .header__container {
+    height: 60px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 0;
+    order: 2;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__text {
+    display: none;
+  }
+
+  .header__phone {
+    order: 3;
+  }
+
+  .header__phone-link {
+    display: none;
+  }
+
+  .header__phone-sigh {
+    display: block;
+  }
+
+  .header__phone-status {
+    align-self: flex-end;
+  }
 }
+
 @media (max-width: 374px) {
-    .header__container {
-        max-width: 258px;
-    }
-    .header__menu {
-        display: none;
-    }
-    .header__burger {
-        display: block;
-    }
-    .logo__text {
-        display: none;
-    }
-    .phone__link {
-        display: none;
-    }
-    .phone__sigh {
-        display: block;
-    }
-    .phone__status {
-        align-self: flex-end;
-    }
+  .header__container {
+    height: 48px;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 0;
+    order: 2;
+  }
+
+  .header__image {
+    height: 28px;
+    width: 28px;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__text {
+    display: none;
+  }
+
+  .header__phone {
+    order: 3;
+  }
+
+  .header__phone-link {
+    display: none;
+  }
+
+  .header__phone-sigh {
+    display: block;
+  }
+
+  .header__phone-status {
+    align-self: flex-end;
+  }
 }

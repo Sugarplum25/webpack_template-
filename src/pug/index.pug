@@ -4,134 +4,14 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title EnergoValves Поставки промышленной арматуры, БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet")
 
-  body
-
     include header.pug
-  
-    main(class="main__content")
-
-      section(class="about")
-
-        div(class="about__block")
-          h1(class="about__title") Поставки промышленной арматуры, <br>БРОУ, РОУ, автоматизированных систем управления арматурой, насосов и сопутствующего оборудования.
-          a(href="#" class="catalog__link") Посмотреть каталог
-
-        div(class="about__block")
-          img(src="../src/img/factory.png", alt="factory" class="about__image")
-
-      section(class="services")
-          div(class="services__container")
-
-            h2(class="title services__title") Услуги
-
-            ul(class="services__list")
-              li(class="services__item")
-               img(src="../src/img/icons/podbor.svg", alt="podbor" class="services__image")
-               p(class="servises__text") Подбор и расчет оборудования (как типового, так и в особом исполнении)
-
-              li(class="services__item")
-                img(src="../src/img/icons/kontrol.svg", alt="kontrol" class="services__image")
-                p(class="servises__text") Контроль изготовления и своевременной отгрузки оборудования с завода
-
-              li(class="services__item") 
-               img(src="../src/img/icons/tamojna.svg", alt="tamojna" class="services__image")
-               p(class="servises__text") Таможенное оформление (при необходимости)
-
-              li(class="services__item") 
-                img(src="../src/img/icons/dostavka.svg", alt="dostavka" class="services__image")
-                p(class="servises__text") Доставка оборудования
-
-              li(class="services__item") 
-                img(src="../src/img/icons/montaj.svg", alt="montaj" class="services__image")
-                p(class="servises__text") Шеф-монтаж, шеф-наладка
-
-              li(class="services__item") 
-                img(src="../src/img/icons/obuchenie.svg", alt="obuchenie" class="services__image")
-                p(class="servises__text") Обучение персонала
-
-              li(class="services__item") 
-                img(src="../src/img/icons/garant.svg", alt="garant" class="services__image")
-                p(class="servises__text") Гарантийное и сервисное обслуживание
-
-      section(class="customers")
-
-        h2(class="title customers__title") Заказчики
-
-        div(class="customers__container")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_mosenergo.png", alt="mosenergo" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_lukoil.svg", alt="lukoil" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_silovie_mashini.png", alt="silovie_mashini" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_raoees.png", alt="raoees" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_rusgidro.svg", alt="rusgidro" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_eurohim.png", alt="eurohim" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_tekmosenergo.png", alt="tekmosenergo" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_sibur.png", alt="sibur" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_severstal.png", alt="severstal" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_gencomparny.png", alt="gencomparny" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_tashir.png", alt="tashir" class="customers__image")
-
-          div(class="customers__item")
-            img(src="../src/img/customers/logo_red_kot.png", alt="red_kot" class="customers__image") 
-
-      section(class="features")
-        div(class="features__container")
-
-          h2(class="title features__title") Преимущества
-          ul(class="features__list")
-
-            li(class="features__item")
-              img(src="../src/img/features/partnership.svg", alt="partnership" class="features__image")
-              h3(class="features__subtitle") Долгосрочное сотрудничество
-              p(class="features__text") Большинство заказчиков неоднократно обращаются к нам с новыми заявками на оборудование.
-
-            li(class="features__item")
-              img(src="../src/img/features/active_presence.svg", alt="active_presence" class="features__image")
-              h3(class="features__subtitle") Активное присутствие на рынке
-              p(class="features__text")  Участвуем в 80% проектов строительства энергетических объектов, реализуемых в настоящее время в России.
-
-            li(class="features__item")
-              img(src="../src/img/features/ddp_delivery.svg", alt="ddp_delivery" class="features__image")
-              h3(class="features__subtitle") Поставка на условиях DDP
-              p(class="features__text") Берем на себя все таможенные и транспортные обязательства. Вам остается только принять оборудование у себя на складе.
-
-            li(class="features__item")
-              img(src="../src/img/features/work_experience.svg", alt="work_experience" class="features__image")
-              h3(class="features__subtitle") Опыт работы
-              p(class="features__text") В период с 2011 по 2019 год мы исполнили более 180 контрактов на поставку 15000 единиц оборудования в 7 федеральных округов РФ, а также в 6 стран Евросоюза и СНГ.
-
-            li(class="features__item")
-              img(src="../src/img/features/quality_equipment.svg", alt="quality_equipment" class="features__image")
-              h3(class="features__subtitle") Качественное оборудование
-              p(class="features__text") Поставляем надежную трубопроводную арматуру лучших европейских заводов с многолетними традициями производства. Оборудование, которое ценят проектировщики и эксплуатирующие организации. 
-
-            li(class="features__item")
-              img(src="../src/img/features/engagements.svg", alt="engagements" class="features__image")
-              h3(class="features__subtitle") Выполнение обязательств
-              p(class="features__text") На оборудование предоставляется заводская гарантия. И даже поcле окончания гарантийного срока, мы остаемся с вами на связи. Не беспокойтесь, мы поможем восстановить потерянную документацию и решить любой другой вопрос по оборудованию.
-    
+    include about.pug
+    include services.pug
+    include customers.pug
+    include features.pug
     include footer.pug
+    

@@ -1,5 +1,12 @@
+@import 'variables.scss';
+
 .footer {
   background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
+  box-sizing: border-box;
+  color: $main-color;
+  font-family: $main-font;
+  font-size: $main-size;
+  margin: $zero-margin;
 }
 
 .footer__container {
@@ -21,6 +28,7 @@
 .footer__link {
   color: $main-color;
   display: block;
+  text-decoration: none;
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {

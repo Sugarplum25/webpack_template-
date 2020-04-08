@@ -4,11 +4,16 @@
   background: linear-gradient(0deg, #fff, #fff);
   margin: auto;
   max-width: 1100px;
-  padding: 80px 0 80px 0;
+  padding: 5rem 0;
 }
 
 .customers__title {
   color: #000f40;
+  font-family: $add-font;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 120%;
+  margin: $zero-margin;
 }
 
 .customers__container {
@@ -17,7 +22,7 @@
   justify-content: center;
   margin: auto;
   max-width: 1100px;
-  padding-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .customers__item {
@@ -25,7 +30,7 @@
   display: flex;
   height: 140px;
   justify-content: center;
-  margin: 0 24px 32px 0;
+  margin: 0 1.5rem 2rem 0;
   width: 257px;
 }
 
@@ -46,7 +51,7 @@
     max-width: 727px;
   }
 
-  .title {
+  .customers__title {
     font-size: 2.63rem;
   }
 
@@ -62,48 +67,56 @@
   .customers {
     max-width: 634px;
   }
-
   .customers__item {
     height: 106px;
-    margin-bottom: 32px;
-    margin-right: 16px;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
     width: 195px;
   }
 }
 
 @media (max-width: 767px) and (min-width: 375px) {
   .customers {
-    max-width: 351px;
-    padding: 60px 0;
+    // max-width: 351px;
+    padding: 3.75rem 0;
   }
 
-  .title {
+  .customers__title {
     font-size: 2.25rem;
+    margin-left: 0.75rem;
   }
-
+  .customers__container {
+    margin-top: 2rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
   .customers__item {
     height: 90px;
-    margin-bottom: 24px;
-    margin-right: 11px;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
     width: 164px;
   }
 }
 
 @media (max-width: 374px) {
   .customers {
-    max-width: 258px;
-    padding: 40px 0;
+    padding: 3.75rem 0;
   }
 
-  .title {
+  .customers__title {
     font-size: 1.75rem;
+    margin-left: 0.75rem;
   }
-
+  .customers__container {
+    margin-top: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
   .customers__item {
     height: 64px;
     margin: 0;
-    margin-bottom: 24px;
-    margin-right: 12px;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
     width: 117px;
   }
 }

@@ -36,7 +36,7 @@
 }
 
 .header__link {
-  margin-right: 12px;
+  margin-right: 0.75rem;
   text-decoration: none;
 }
 
@@ -68,33 +68,33 @@
   padding-left: 0;
 }
 
-.menu__item {
+.header__menu-item {
   color: $main-color;
   line-height: 1.2rem;
   padding: 0 1em;
 }
 
-.phone {
+.header__phone {
   align-items: center;
   display: flex;
 }
 
-.phone__status {
+.header__phone-status {
   background: #29cc5f;
   border-radius: 50%;
   height: 8px;
-  margin-right: 8px;
+  margin-right: 0.5rem;
   width: 8px;
 }
 
-.phone__link {
+.header__phone-link {
   color: $main-color;
   font-size: 1.25rem;
   line-height: 1.43rem;
   text-decoration: none;
 }
 
-.phone__sigh {
+.header__phone-sigh {
   display: none;
 }
 
@@ -147,7 +147,7 @@
     order: 3;
   }
 
-  .phone__link {
+  .header__phone-link {
     font-size: 1.125rem;
     line-height: 1.3rem;
   }
@@ -159,7 +159,6 @@
   }
 
   .header__logo {
-    margin: auto;
     order: 2;
   }
 
@@ -175,7 +174,7 @@
     order: 3;
   }
 
-  .phone__link {
+  .header__phone-link {
     color: #000f40;
     font-size: 1.125rem;
     line-height: 1.3rem;
@@ -210,15 +209,15 @@
     order: 3;
   }
 
-  .phone__link {
+  .header__phone-link {
     display: none;
   }
 
-  .phone__sigh {
+  .header__phone-sigh {
     display: block;
   }
 
-  .phone__status {
+  .header__phone-status {
     align-self: flex-end;
   }
 }
@@ -255,15 +254,15 @@
     order: 3;
   }
 
-  .phone__link {
+  .header__phone-link {
     display: none;
   }
 
-  .phone__sigh {
+  .header__phone-sigh {
     display: block;
   }
 
-  .phone__status {
+  .header__phone-status {
     align-self: flex-end;
   }
 }

@@ -102,9 +102,10 @@
 @media (max-width: 767px) and (min-width: 375px) {
   .about {
     flex-direction: column-reverse;
-    max-width: 351px;
     padding-bottom: 3.75rem;
     padding-top: 3.75rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .about__block {
@@ -133,9 +134,10 @@
 @media (max-width: 374px) {
   .about {
     flex-direction: column-reverse;
-    max-width: 258px;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .about__block {

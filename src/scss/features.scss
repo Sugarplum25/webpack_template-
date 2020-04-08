@@ -2,6 +2,7 @@
 
 .features {
   background: linear-gradient(0deg, #000f40, #000f40);
+  font-family: $main-font;
 }
 
 .features__container {
@@ -95,8 +96,10 @@
 
 @media (max-width: 767px) and (min-width: 375px) {
   .features__container {
-    max-width: 351px;
     padding: 3.75rem 0;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
   }
 
   .features__title {

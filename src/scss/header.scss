@@ -35,7 +35,7 @@
   text-align: center;
 }
 
-.header__link {
+.header__menu-item {
   margin-right: 0.75rem;
   text-decoration: none;
 }
@@ -185,7 +185,8 @@
 @media (max-width: 767px) and (min-width: 375px) {
   .header__container {
     height: 60px;
-    max-width: 351px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .header__menu {
@@ -225,7 +226,9 @@
 @media (max-width: 374px) {
   .header__container {
     height: 48px;
-    max-width: 258px;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+
   }
 
   .header__menu {

@@ -92,8 +92,9 @@
 
 @media (max-width: 767px) and (min-width: 375px) {
   .services__container {
-    max-width: 351px;
     padding: 3.75rem 0;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .services__title {
@@ -121,8 +122,9 @@
 
 @media (max-width: 374px) {
   .services__container {
-    max-width: 258px;
     padding: 2.5rem 0;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .services__title {

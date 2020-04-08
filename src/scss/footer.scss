@@ -54,13 +54,15 @@
 @media (max-width: 767px) and (min-width: 375px) {
   .footer__container {
     font-size: 0.75rem;
-    max-width: 351px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 }
 
 @media (max-width: 374px) {
   .footer__container {
     font-size: 0.63rem;
-    max-width: 258px;
+    margin-left: 1.95rem;
+    margin-right: 1.95rem;
   }
 }

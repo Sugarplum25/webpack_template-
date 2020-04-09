@@ -35,11 +35,6 @@
   text-align: center;
 }
 
-.header__menu-item {
-  margin-right: 0.75rem;
-  text-decoration: none;
-}
-
 .header__text {
   align-items: center;
   display: flex;
@@ -71,6 +66,7 @@
 .header__menu-item {
   color: $main-color;
   line-height: 1.2rem;
+  margin-right: 0.75rem;
   padding: 0 1em;
 }
 
@@ -228,7 +224,6 @@
     height: 48px;
     margin-left: 1.9rem;
     margin-right: 1.9rem;
-
   }
 
   .header__menu {

@@ -89,6 +89,7 @@
   .features__container {
     max-width: 634px;
   }
+
   .features__text {
     font-size: 0.875rem;
   }
@@ -96,18 +97,19 @@
 
 @media (max-width: 767px) and (min-width: 375px) {
   .features__container {
-    padding: 3.75rem 0;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-
+    padding: 3.75rem 0;
   }
 
   .features__title {
     font-size: 2.25rem;
   }
+
   .features__list {
     margin-top: 2rem;
   }
+
   .features__subtitle {
     margin-top: 1.5rem;
   }
@@ -120,6 +122,7 @@
     height: 164px;
     width: 164px;
   }
+
   .features__text {
     font-size: 0.875rem;
   }
@@ -127,21 +130,24 @@
 
 @media (max-width: 374px) {
   .features__container {
-    padding: 2.5rem 0;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    padding: 2.5rem 0;
   }
 
   .features__title {
     font-size: 1.75rem;
   }
+
   .features__list {
     margin-top: 0.75rem;
   }
+
   .features__subtitle {
-    margin-top: 0.75rem;
     font-size: 1rem;
-  }  
+    margin-top: 0.75rem;
+  }
+
   .features__item {
     width: 100%;
   }

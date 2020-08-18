@@ -3,61 +3,61 @@
 .features {
   background: linear-gradient(0deg, #000f40, #000f40);
   font-family: $main-font;
-}
 
-.features__container {
-  margin: auto;
-  max-width: 1100px;
-  padding: 5rem 0;
-}
+  &__container {
+    margin: auto;
+    max-width: 1100px;
+    padding: 5rem 0;
+  }
 
-.features__title {
-  color: #e5ebff;
-  font-family: $add-font;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 120%;
-  margin: $zero-margin;
-}
+  &__title {
+    color: $add-color;
+    font-family: $add-font;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 120%;
+    margin: $zero-margin;
+  }
 
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: $zero-margin;
-  margin-top: 2.5rem;
-  padding: 0;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: $zero-margin;
+    margin-top: 2.5rem;
+    padding: 0;
+  }
 
-.features__subtitle {
-  color: #e5ebff;
-  font-size: 1.375rem;
-  font-weight: bold;
-  line-height: 160%;
-  margin: $zero-margin;
-  margin-top: 2rem;
-}
+  &__subtitle {
+    color: $add-color;
+    font-size: 1.375rem;
+    font-weight: bold;
+    line-height: 160%;
+    margin: $zero-margin;
+    margin-top: 2rem;
+  }
 
-.features__item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-  margin-right: 1.56rem;
-  width: 45%;
-}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-right: 1.56rem;
+    width: 45%;
+  }
 
-.features__image {
-  height: 220px;
-  max-width: 100%;
-  width: 220px;
-}
+  &__image {
+    height: 220px;
+    max-width: 100%;
+    width: 220px;
+  }
 
-.features__text {
-  color: #e5ebff;
-  font-size: 1rem;
-  line-height: 150%;
-  margin: $zero-margin;
-  margin-top: 0.5rem;
+  &__text {
+    color: $add-color;
+    font-size: 1rem;
+    line-height: 150%;
+    margin: $zero-margin;
+    margin-top: 0.5rem;
+  }
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
@@ -67,96 +67,104 @@
 }
 
 @media (max-width: 1023px) and (min-width: 834px) {
-  .features__container {
-    max-width: 727px;
-  }
+  .features {
+    &__container {
+      max-width: 727px;
+    }
 
-  .features__title {
-    font-size: 2.63rem;
-  }
+    &__title {
+      font-size: 2.63rem;
+    }
 
-  .features__subtitle {
-    font-size: 1.125rem;
-  }
+    &__subtitle {
+      font-size: 1.125rem;
+    }
 
-  .features__text {
-    font-size: 0.875rem;
+    &__text {
+      font-size: 0.875rem;
+    }
   }
 }
 
 @media (max-width: 833px) and (min-width: 678px) {
-  .features__container {
-    max-width: 634px;
-  }
+  .features {
+    &__container {
+      max-width: 634px;
+    }
 
-  .features__text {
-    font-size: 0.875rem;
+    &__text {
+      font-size: 0.875rem;
+    }
   }
 }
 
 @media (max-width: 767px) and (min-width: 375px) {
-  .features__container {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    padding: 3.75rem 0;
-  }
+  .features {
+    &__container {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+      padding: 3.75rem 0;
+    }
 
-  .features__title {
-    font-size: 2.25rem;
-  }
+    &__title {
+      font-size: 2.25rem;
+    }
 
-  .features__list {
-    margin-top: 2rem;
-  }
+    &__list {
+      margin-top: 2rem;
+    }
 
-  .features__subtitle {
-    margin-top: 1.5rem;
-  }
+    &__subtitle {
+      margin-top: 1.5rem;
+    }
 
-  .features__item {
-    width: 100%;
-  }
+    &__item {
+      width: 100%;
+    }
 
-  .features__image {
-    height: 164px;
-    width: 164px;
-  }
+    &__image {
+      height: 164px;
+      width: 164px;
+    }
 
-  .features__text {
-    font-size: 0.875rem;
+    &__text {
+      font-size: 0.875rem;
+    }
   }
 }
 
 @media (max-width: 374px) {
-  .features__container {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    padding: 2.5rem 0;
-  }
+  .features {
+    &__container {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+      padding: 2.5rem 0;
+    }
 
-  .features__title {
-    font-size: 1.75rem;
-  }
+    &__title {
+      font-size: 1.75rem;
+    }
 
-  .features__list {
-    margin-top: 0.75rem;
-  }
+    &__list {
+      margin-top: 0.75rem;
+    }
 
-  .features__subtitle {
-    font-size: 1rem;
-    margin-top: 0.75rem;
-  }
+    &__subtitle {
+      font-size: 1rem;
+      margin-top: 0.75rem;
+    }
 
-  .features__item {
-    width: 100%;
-  }
+    &__item {
+      width: 100%;
+    }
 
-  .features__image {
-    height: 117px;
-    width: 117px;
-  }
+    &__image {
+      height: 117px;
+      width: 117px;
+    }
 
-  .features__text {
-    font-size: 0.875rem;
+    &__text {
+      font-size: 0.875rem;
+    }
   }
 }

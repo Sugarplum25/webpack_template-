@@ -54,6 +54,6 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/pug/index.pug'
-    }),
+    })
   ]
 };

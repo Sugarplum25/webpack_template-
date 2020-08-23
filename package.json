@@ -1,7 +1,7 @@
 {
-  "name": "webpack_template",
+  "name": "energo_valves",
   "version": "1.0.0",
-  "description": "webpack simple template",
+  "description": "EnergoValves site",
   "main": "index.pug",
   "scripts": {
     "dev": " webpack --mode development",

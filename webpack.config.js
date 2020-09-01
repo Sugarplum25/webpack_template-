@@ -1,19 +1,36 @@
 const path = require('path');
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+const PATHS = {
+  src: path.resolve(__dirname, 'src')
+};
+const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
+
 module.exports = {
-  entry: ['./src/scss/style.scss'],
+  entry: ['./src/index.js'],
   output: {
-    filename: '[name].html',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [{
-       test: /\.pug$/,
-       loader: 'pug-loader'
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: [
+          /node_modules/
+        ],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
+      { test: /\.pug$/, loader: 'pug-loader' },
       {
         test: /\.scss$/,
         use: [
@@ -33,8 +50,7 @@ module.exports = {
           }
         ]
       },
-      {
-        test: /\.(png|jpg|svg|gif)$/,
+      { test: /\.(png|jpg|svg|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -52,9 +68,10 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new HtmlWebpackPlugin({
-      template: './src/pug/index.pug'
-    }),
+    ...PAGES.map(page => new HtmlWebpackPlugin ({
+      template: `${PAGES_DIR}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    })),
     new CopyPlugin([
       {
         from: 'src/img',

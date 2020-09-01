@@ -4,19 +4,21 @@ header(class="header")
 
         -let logo_img = "img/group.svg";
         div(class="header__logo")
-            a(href="#" class="header__link")
+            a(href="index.html" class="header__link")
                 img(src= logo_img, alt="EnergoValves_logo" class="header__image")
-            div(class="header__text") 
+            a(href="index.html" class="header__text") 
                 p(class="header__text-name") EnergoValves 
                 p(class="header__text-caption") ЭНЕРГИЯ ВОЗМОЖНОСТЕЙ
 
         div(class="header__burger")
+            span(class="header__burger-line")
+            span(class="header__burger-line")
         
         nav(class="header__menu")
-            a(href="#" class="header__menu-item") Каталог
-            a(href="#" class="header__menu-item") О компании
-            a(href="#" class="header__menu-item") Георграфия проектов 
-            a(href="#" class="header__menu-item") Контакты        
+            a(href="company_catalog.html" class="header__menu-item") Каталог
+            a(href="company_about.html" class="header__menu-item") О компании
+            a(href="company_geography.html" class="header__menu-item") Георграфия проектов 
+            a(href="company_contacts.html" class="header__menu-item") Контакты        
 
         div(class="header__phone")
             div(class="header__phone-status")

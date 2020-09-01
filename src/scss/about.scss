@@ -7,7 +7,7 @@
   font-size: $main-size;
   justify-content: space-around;
   margin: auto;
-  max-width: 1100px;
+  max-width: 1440px;
   padding-bottom: 6.875rem;
   padding-top: 6.875rem;
 
@@ -25,6 +25,7 @@
   }
 
   &__link {
+    @include link_reset;
     background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
     border-radius: 100px;
     color: #fff;
@@ -33,7 +34,6 @@
     line-height: 1.187rem;
     padding: 1.125rem 2rem;
     text-align: center;
-    text-decoration: none;
     width: 50%;
   }
 

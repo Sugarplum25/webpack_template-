@@ -52,6 +52,7 @@
 @media (max-width: 677px) and (min-width: 375px) {
   .footer__container {
     @include sm_margins;
+
     font-size: 0.75rem;
   }
 }
@@ -59,6 +60,7 @@
 @media (max-width: 374px) {
   .footer__container {
     @include sm_margins;
+
     font-size: 0.63rem;
   }
 }

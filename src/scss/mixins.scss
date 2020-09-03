@@ -3,3 +3,7 @@
   text-decoration: none;
   color: inherit;
 }
+@mixin sm_margins {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}

@@ -3,7 +3,7 @@
 .customers {
   background: linear-gradient(0deg, #fff, #fff);
   margin: auto;
-  max-width: 1440px;
+  max-width: 1100px;
   padding: 5rem 0;
 
   &__title {
@@ -18,10 +18,9 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
     margin-top: 2.5rem;
-    max-width: 1100px;
   }
 
   &__item {
@@ -75,9 +74,9 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 375px) {
+@media (max-width: 677px) and (min-width: 375px) {
   .customers {
-    padding: 3.75rem 0;
+    padding: 2rem 0;
 
     &__title {
       font-size: 2.25rem;
@@ -85,15 +84,14 @@
     }
 
     &__container {
-      margin-left: 0.75rem;
-      margin-right: 0.75rem;
+      @include sm_margins; 
       margin-top: 2rem;
     }
 
     &__item {
       height: 90px;
       margin-bottom: 1.5rem;
-      margin-right: 1.5rem;
+      margin-right: 0.5rem;
       width: 164px;
     }
   }
@@ -109,8 +107,7 @@
     }
 
     &__container {
-      margin-left: 0.75rem;
-      margin-right: 0.75rem;
+      @include sm_margins;
       margin-top: 1.5rem;
     }
 

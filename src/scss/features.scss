@@ -6,7 +6,7 @@
 
   &__container {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1100px;
     padding: 5rem 0;
   }
 
@@ -98,11 +98,10 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 375px) {
+@media (max-width: 677px) and (min-width: 375px) {
   .features {
     &__container {
-      margin-left: 0.75rem;
-      margin-right: 0.75rem;
+      @include sm_margins;
       padding: 3.75rem 0;
     }
 
@@ -136,8 +135,7 @@
 @media (max-width: 374px) {
   .features {
     &__container {
-      margin-left: 0.75rem;
-      margin-right: 0.75rem;
+      @include sm_margins;
       padding: 2.5rem 0;
     }
 

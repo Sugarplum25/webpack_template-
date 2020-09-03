@@ -1,165 +1,157 @@
 @import 'variables.scss';
 
 .about {
-  color: $main-color;
-  display: flex;
-  font-family: $main-font;
-  font-size: $main-size;
-  justify-content: space-around;
-  margin: auto;
-  max-width: 1440px;
-  padding-bottom: 6.875rem;
-  padding-top: 6.875rem;
-
-  &__block {
-    width: 49%;
+  &__container {
+    color: $main-color;
+    display: flex;
+    font-family: $main-font;
+    font-size: $main-size;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1100px;
+    padding-bottom: 6.875rem;
+    padding-top: 6.875rem;
   }
+  &__block {
+      width: 49%;
+    }
 
   &__title {
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: 150%;
-    margin: $zero-margin;
-    margin-bottom: 1.5rem;
-    margin-right: 3.065rem;
-  }
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 150%;
+      margin: $zero-margin;
+      margin-bottom: 1.5rem;
+      margin-right: 3.065rem;
+    }
 
   &__link {
-    @include link_reset;
-    background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
-    border-radius: 100px;
-    color: #fff;
-    display: block;
-    font-size: 1rem;
-    line-height: 1.187rem;
-    padding: 1.125rem 2rem;
-    text-align: center;
-    width: 50%;
-  }
+      @include link_reset;
+      background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
+      border-radius: 100px;
+      color: #fff;
+      display: block;
+      font-size: 1rem;
+      line-height: 1.187rem;
+      padding: 1.125rem 2rem;
+      text-align: center;
+      width: 50%;
+    }
 
   &__image {
-    display: block;
-    height: 247px;
-    width: 446px;
-  }
-}
+      display: block;
+      height: 247px;
+      width: 446px;
+    }
+
 
 @media (max-width: 1439px) and (min-width: 1024px) {
-  .about {
+  .about__container {
     max-width: 916px;
   }
 }
 
 @media (max-width: 1023px) and (min-width: 834px) {
   .about {
-    max-width: 727px;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-
+    &__container {
+      max-width: 727px;
+      padding-bottom: 5rem;
+      padding-top: 5rem;     
+    }
     &__block {
       width: 48%;
     }
-
     &__title {
       font-size: 1.125rem;
       margin-bottom: 1.5rem;
       margin-right: 1.5rem;
     }
-
     &__link {
       font-size: 0.88rem;
       padding: 1rem 1.375rem;
     }
-
-    &__image {
-      height: 195px;
-      width: 352px;
-    }
-  }
-}
+  }}
 
 @media (max-width: 833px) and (min-width: 678px) {
   .about {
-    max-width: 634px;
-
+    &__container {
+      max-width: 634px;
+      padding: 5rem 0;
+    }
     &__title {
       font-size: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       margin-right: 1.5rem;
     }
-
     &__link {
       padding: 1rem 0.81rem;
     }
-
     &__image {
       height: 143px;
       width: 258px;
     }
-  }
-}
+  }}
 
-@media (max-width: 767px) and (min-width: 375px) {
+
+@media (max-width: 677px) and (min-width: 375px) {
   .about {
+    &__container {
+    @include sm_margins;  
     flex-direction: column-reverse;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
     padding-bottom: 3.75rem;
     padding-top: 3.75rem;
-
+  }   
     &__block {
-      width: 100%;
+        width: 100%;
     }
 
     &__title {
-      font-size: 1rem;
-      margin: $zero-margin;
-      margin-bottom: 1rem;
-      margin-top: 1.5rem;
+        font-size: 1rem;
+        margin: $zero-margin;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
     }
 
     &__link {
-      font-size: 0.88rem;
-      padding: 0.81rem 1.43rem;
-      width: 43%;
+        font-size: 0.88rem;
+        padding: 0.81rem 1.43rem;
+        width: 43%;
     }
 
     &__image {
-      height: 195px;
-      width: 352px;
+        height: 195px;
+        width: 352px;
+      }
     }
-  }
 }
 
 @media (max-width: 374px) {
   .about {
-    flex-direction: column-reverse;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    padding-bottom: 2.5rem;
-    padding-top: 2.5rem;
-
+    &__container {
+      @include sm_margins;
+      flex-direction: column-reverse;
+      padding-bottom: 2.5rem;
+      padding-top: 2.5rem;
+    }
     &__block {
       width: 100%;
     }
-
     &__title {
       font-size: 0.88rem;
       margin: $zero-margin;
       margin-bottom: 0.75rem;
       margin-top: 1rem;
     }
-
     &__link {
       font-size: 0.75rem;
       line-height: 0.87rem;
       padding: 0.68rem 1.3rem;
       width: 49%;
     }
-
     &__image {
+      margin: auto;
       height: 143px;
       width: 258px;
     }
   }
-}
+}}

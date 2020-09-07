@@ -3,6 +3,7 @@ const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const PATHS = {
   src: path.resolve(__dirname, 'src')
@@ -18,8 +19,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
+      { test: /\.js$/,
         exclude: [
           /node_modules/
         ],
@@ -31,19 +31,21 @@ module.exports = {
         }
       },
       { test: /\.pug$/, loader: 'pug-loader' },
-      {
-        test: /\.scss$/,
+      { test: /\.scss$/, 
         use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
+          'style-loader', MiniCssExtractPlugin.loader,
+          { loader: 'css-loader',
             options: {
               sourceMap: true
             }
           },
           {
-            loader: 'sass-loader',
+            loader: 'postcss-loader',
+            options: { 
+              sourceMap: true 
+            },
+          },
+          { loader: 'sass-loader',
             options: {
               sourceMap: true
             }
@@ -77,6 +79,7 @@ module.exports = {
         from: 'src/img',
         to: 'img',
       },
-    ])
+    ]),
+
   ]
 };

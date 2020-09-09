@@ -1,13 +1,10 @@
-// module.exports = {
-//   plugins: [
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-{
-  preset: [
-        'default', {
-          discardComments: {
-            removeAll: true,
-          }
-        }
-  ]
+
+module.exports = {
+    plugins: [
+        require('postcss-focus'),
+        require('autoprefixer'),
+        require('cssnano')
+    ]
 }

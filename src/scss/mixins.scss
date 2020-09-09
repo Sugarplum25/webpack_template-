@@ -1,9 +1,10 @@
 @mixin link_reset {
+  color: inherit;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
 }
+
 @mixin sm_margins {
-  margin-right: 0.75rem;
   margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }

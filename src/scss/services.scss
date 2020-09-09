@@ -91,6 +91,7 @@
     &__item {
       margin-right: 2rem;
     }
+
     &__text {
       font-size: 0.875rem;
     }
@@ -101,6 +102,7 @@
   .services {
     &__container {
       @include sm_margins;
+
       padding: 3.75rem 0;
     }
 
@@ -132,6 +134,7 @@
   .services {
     &__container {
       @include sm_margins;
+
       padding: 2.5rem 0;
     }
 

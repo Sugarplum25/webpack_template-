@@ -2,15 +2,15 @@
 
 .about {
   &__container {
-    color: $main-color;
     display: flex;
-    font-family: $main-font;
-    font-size: $main-size;
     justify-content: space-around;
-    margin: auto;
     max-width: 1100px;
-    padding-bottom: 6.875rem;
+    margin: auto;
     padding-top: 6.875rem;
+    padding-bottom: 6.875rem;
+    color: $main-color;
+    font-size: $main-size;
+    font-family: $main-font;
   }
 
   &__block {
@@ -18,32 +18,32 @@
   }
 
   &__title {
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: 150%;
     margin: $zero-margin;
-    margin-bottom: 1.5rem;
     margin-right: 3.065rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 150%;
   }
 
   &__link {
     @include link_reset;
 
-    background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
-    border-radius: 100px;
-    color: #fff;
     display: block;
+    width: 50%;
+    padding: 1.125rem 2rem;
+    color: #fff;
     font-size: 1rem;
     line-height: 1.187rem;
-    padding: 1.125rem 2rem;
     text-align: center;
-    width: 50%;
+    background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
+    border-radius: 100px;
   }
 
   &__image {
     display: block;
-    height: 247px;
     width: 446px;
+    height: 247px;
   }
 
   @media (max-width: 1439px) and (min-width: 1024px) {
@@ -56,8 +56,8 @@
     .about {
       &__container {
         max-width: 727px;
-        padding-bottom: 5rem;
         padding-top: 5rem;
+        padding-bottom: 5rem;
       }
 
       &__block {
@@ -65,14 +65,14 @@
       }
 
       &__title {
-        font-size: 1.125rem;
-        margin-bottom: 1.5rem;
         margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.125rem;
       }
 
       &__link {
-        font-size: 0.88rem;
         padding: 1rem 1.375rem;
+        font-size: 0.88rem;
       }
     }
   }
@@ -85,9 +85,9 @@
       }
 
       &__title {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
         margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
       }
 
       &__link {
@@ -95,8 +95,8 @@
       }
 
       &__image {
-        height: 143px;
         width: 258px;
+        height: 143px;
       }
     }
   }
@@ -107,8 +107,8 @@
         @include sm_margins;
 
         flex-direction: column-reverse;
-        padding-bottom: 3.75rem;
         padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
       }
 
       &__block {
@@ -116,21 +116,21 @@
       }
 
       &__title {
-        font-size: 1rem;
         margin: $zero-margin;
-        margin-bottom: 1rem;
         margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
       }
 
       &__link {
-        font-size: 0.88rem;
-        padding: 0.81rem 1.43rem;
         width: 43%;
+        padding: 0.81rem 1.43rem;
+        font-size: 0.88rem;
       }
 
       &__image {
-        height: 195px;
         width: 352px;
+        height: 195px;
       }
     }
   }
@@ -141,8 +141,8 @@
         @include sm_margins;
 
         flex-direction: column-reverse;
-        padding-bottom: 2.5rem;
         padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
       }
 
       &__block {
@@ -150,23 +150,23 @@
       }
 
       &__title {
-        font-size: 0.88rem;
         margin: $zero-margin;
-        margin-bottom: 0.75rem;
         margin-top: 1rem;
+        margin-bottom: 0.75rem;
+        font-size: 0.88rem;
       }
 
       &__link {
+        width: 49%;
+        padding: 0.68rem 1.3rem;
         font-size: 0.75rem;
         line-height: 0.87rem;
-        padding: 0.68rem 1.3rem;
-        width: 49%;
       }
 
       &__image {
+        width: 258px;
         height: 143px;
         margin: auto;
-        width: 258px;
       }
     }
   }

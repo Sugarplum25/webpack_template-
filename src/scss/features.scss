@@ -1,22 +1,22 @@
 @import 'variables.scss';
 
 .features {
-  background: linear-gradient(0deg, #000f40, #000f40);
   font-family: $main-font;
+  background: linear-gradient(0deg, #000f40, #000f40);
 
   &__container {
-    margin: auto;
     max-width: 1100px;
+    margin: auto;
     padding: 5rem 0;
   }
 
   &__title {
-    color: $add-color;
-    font-family: $add-font;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 120%;
     margin: $zero-margin;
+    color: $add-color;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: $add-font;
+    line-height: 120%;
   }
 
   &__list {
@@ -29,34 +29,34 @@
   }
 
   &__subtitle {
-    color: $add-color;
-    font-size: 1.375rem;
-    font-weight: bold;
-    line-height: 160%;
     margin: $zero-margin;
     margin-top: 2rem;
+    color: $add-color;
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 160%;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
-    margin-right: 1.56rem;
     width: 45%;
+    margin-right: 1.56rem;
+    margin-bottom: 3rem;
   }
 
   &__image {
-    height: 220px;
-    max-width: 100%;
     width: 220px;
+    max-width: 100%;
+    height: 220px;
   }
 
   &__text {
+    margin: $zero-margin;
+    margin-top: 0.5rem;
     color: $add-color;
     font-size: 1rem;
     line-height: 150%;
-    margin: $zero-margin;
-    margin-top: 0.5rem;
   }
 }
 
@@ -123,8 +123,8 @@
     }
 
     &__image {
-      height: 164px;
       width: 164px;
+      height: 164px;
     }
 
     &__text {
@@ -150,8 +150,8 @@
     }
 
     &__subtitle {
-      font-size: 1rem;
       margin-top: 0.75rem;
+      font-size: 1rem;
     }
 
     &__item {
@@ -159,8 +159,8 @@
     }
 
     &__image {
-      height: 117px;
       width: 117px;
+      height: 117px;
     }
 
     &__text {

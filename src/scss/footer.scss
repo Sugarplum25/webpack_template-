@@ -1,22 +1,22 @@
 @import 'variables.scss';
 
 .footer {
-  background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
   box-sizing: border-box;
-  color: $main-color;
-  font-family: $main-font;
-  font-size: $main-size;
   margin: $zero-margin;
+  color: $main-color;
+  font-size: $main-size;
+  font-family: $main-font;
+  background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
 
   &__container {
-    align-items: center;
     display: flex;
-    font-size: 0.88rem;
+    align-items: center;
     justify-content: space-between;
-    line-height: 160%;
-    margin: auto;
     max-width: 1100px;
+    margin: auto;
     padding: 1.4rem 0;
+    font-size: 0.88rem;
+    line-height: 160%;
     text-align: center;
   }
 
@@ -37,15 +37,15 @@
 
 @media (max-width: 1023px) and (min-width: 834px) {
   .footer__container {
-    font-size: 0.75rem;
     max-width: 727px;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 833px) and (min-width: 678px) {
   .footer__container {
-    font-size: 0.75rem;
     max-width: 634px;
+    font-size: 0.75rem;
   }
 }
 

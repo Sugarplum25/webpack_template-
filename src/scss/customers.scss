@@ -1,18 +1,18 @@
 @import 'variables.scss';
 
 .customers {
-  background: linear-gradient(0deg, #fff, #fff);
-  margin: auto;
   max-width: 1100px;
+  margin: auto;
   padding: 5rem 0;
+  background: linear-gradient(0deg, #fff, #fff);
 
   &__title {
-    color: $main-color;
-    font-family: $add-font;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 120%;
     margin: $zero-margin;
+    color: $main-color;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: $add-font;
+    line-height: 120%;
   }
 
   &__container {
@@ -24,17 +24,17 @@
   }
 
   &__item {
-    align-items: center;
     display: flex;
-    height: 140px;
+    align-items: center;
     justify-content: center;
     width: 257px;
+    height: 140px;
   }
 
   &__image {
     display: block;
-    height: auto;
     max-width: 100%;
+    height: auto;
   }
 }
 
@@ -53,10 +53,10 @@
     }
 
     &__item {
-      height: 123px;
-      margin-bottom: 32px;
-      margin-right: 16px;
       width: 226px;
+      height: 123px;
+      margin-right: 16px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -66,10 +66,10 @@
     max-width: 634px;
 
     &__item {
-      height: 106px;
-      margin-bottom: 2rem;
-      margin-right: 0.5rem;
       width: 195px;
+      height: 106px;
+      margin-right: 0.5rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -79,8 +79,8 @@
     padding: 2rem 0;
 
     &__title {
-      font-size: 2.25rem;
       margin-left: 0.75rem;
+      font-size: 2.25rem;
     }
 
     &__container {
@@ -90,10 +90,10 @@
     }
 
     &__item {
-      height: 90px;
-      margin-bottom: 1.5rem;
-      margin-right: 0.5rem;
       width: 164px;
+      height: 90px;
+      margin-right: 0.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
@@ -103,8 +103,8 @@
     padding: 3.75rem 0;
 
     &__title {
-      font-size: 1.75rem;
       margin-left: 0.75rem;
+      font-size: 1.75rem;
     }
 
     &__container {
@@ -114,11 +114,11 @@
     }
 
     &__item {
+      width: 117px;
       height: 64px;
       margin: 0;
-      margin-bottom: 1rem;
       margin-right: 1.5rem;
-      width: 117px;
+      margin-bottom: 1rem;
     }
   }
 }

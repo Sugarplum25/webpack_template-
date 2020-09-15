@@ -9,12 +9,14 @@
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
 
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1100px;
     height: 80px;
     margin: auto;
+    z-index: 2;
   }
 
   &__burger {
@@ -132,6 +134,13 @@
 
     &__menu {
       display: none;
+
+      &-active {
+        @include drop_styles;
+
+        top: 80px;
+        width: 916px;
+      }
     }
 
     &__burger {
@@ -157,6 +166,13 @@
 
     &__menu {
       display: none;
+
+      &-active {
+        @include drop_styles;
+
+        top: 60px;
+        width: 728px;
+      }
     }
 
     &__image {
@@ -191,6 +207,13 @@
 
     &__menu {
       display: none;
+
+      &-active {
+        @include drop_styles;
+
+        top: 80px;
+        width: 634px;
+      }
     }
 
     &__burger {
@@ -218,6 +241,15 @@
 
     &__menu {
       display: none;
+
+      &-active {
+        @include drop_styles;
+
+        top: 60px;
+        right: 0;
+        left: 0;
+        width: 350px;
+      }
     }
 
     &__logo {
@@ -261,6 +293,15 @@
 
     &__menu {
       display: none;
+
+      &-active {
+        @include drop_styles;
+
+        top: 48px;
+        right: 0;
+        left: 0;
+        width: 258px;
+      }
     }
 
     &__logo {

@@ -1,5 +1,5 @@
 {
-    "extends": "stylelint-config-standard",
+    "extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
     "plugins": [
         "stylelint-order"
     ],
@@ -8,7 +8,6 @@
         "order/order": [
             "custom-properties",
             "declarations"
-        ],
-        "order/properties-alphabetical-order": true
+        ]
     }
 }

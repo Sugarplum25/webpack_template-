@@ -1,6 +1,19 @@
 @import 'variables.scss';
 
+@keyframes menu_open {
+  from {
+    top: -100px;
+  }
+
+  to {
+    top: 90px;
+  }
+}
+
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
   box-sizing: border-box;
   color: $main-color;
   font-size: $main-size;
@@ -10,13 +23,13 @@
 
   &__container {
     position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1100px;
     height: 80px;
     margin: auto;
-    z-index: 2;
   }
 
   &__burger {
@@ -138,8 +151,8 @@
       &-active {
         @include drop_styles;
 
-        top: 80px;
         width: 916px;
+        animation: menu_open 0.7s forwards;
       }
     }
 
@@ -170,8 +183,8 @@
       &-active {
         @include drop_styles;
 
-        top: 60px;
         width: 728px;
+        animation: menu_open 0.7s forwards;
       }
     }
 
@@ -211,8 +224,8 @@
       &-active {
         @include drop_styles;
 
-        top: 80px;
         width: 634px;
+        animation: menu_open 0.7s forwards;
       }
     }
 
@@ -245,10 +258,10 @@
       &-active {
         @include drop_styles;
 
-        top: 60px;
         right: 0;
         left: 0;
         width: 350px;
+        animation: menu_open 0.7s forwards;
       }
     }
 
@@ -301,6 +314,7 @@
         right: 0;
         left: 0;
         width: 258px;
+        animation: menu_open 0.7s forwards;
       }
     }
 

@@ -1,4 +1,4 @@
 import './scss/style.scss';
-import app from './js/burger';
+import showBurger from './js/showBurger';
 
-app();
+showBurger();

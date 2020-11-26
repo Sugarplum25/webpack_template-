@@ -10,7 +10,7 @@ const showBurger = () => {
     if (body.style.overflow !== 'hidden') {
       body.style.overflow = 'hidden';
     } else {
-      body.style.overflow = 'auto';
+      body.style.overflow = '';
     }
   });
 };

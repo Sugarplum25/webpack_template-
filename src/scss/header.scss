@@ -1,15 +1,5 @@
 @import 'variables.scss';
 
-@keyframes menu_open {
-  from {
-    top: -100px;
-  }
-
-  to {
-    top: 90px;
-  }
-}
-
 .header {
   position: sticky;
   top: 0;
@@ -44,7 +34,7 @@
       height: 3px;
       background-color: $main-color;
       border-radius: 2px;
-      transition: 0.6s all;
+      transition: 0.6s ease-out;
 
       &:first-child {
         margin-bottom: 10px;
@@ -351,5 +341,15 @@
         align-self: flex-end;
       }
     }
+  }
+}
+
+@keyframes menu_open {
+  from {
+    top: -100px;
+  }
+
+  to {
+    top: 90px;
   }
 }

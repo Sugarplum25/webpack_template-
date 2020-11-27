@@ -30,7 +30,7 @@
     @include link_reset;
 
     display: block;
-    width: 50%;
+    max-width: 220px;
     padding: 1.125rem 2rem;
     color: #fff;
     font-size: 1rem;
@@ -38,30 +38,35 @@
     text-align: center;
     background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
     border-radius: 100px;
+
+    &:hover {
+      text-decoration: underline;
+      background: $hover-color;
+    }
+
+    &:active {
+      background: $focus-color;
+    }
   }
 
   &__image {
     display: block;
-    width: 446px;
-    height: 247px;
+    width: 100%;
+    height: 100%;
   }
 
-  @media (max-width: 1439px) and (min-width: 1024px) {
+  @media (max-width: 1439px) {
     .about__container {
       max-width: 916px;
     }
   }
 
-  @media (max-width: 1023px) and (min-width: 834px) {
+  @media (max-width: 1023px) {
     .about {
       &__container {
         max-width: 727px;
         padding-top: 5rem;
         padding-bottom: 5rem;
-      }
-
-      &__block {
-        width: 48%;
       }
 
       &__title {
@@ -71,13 +76,14 @@
       }
 
       &__link {
+        max-width: 180px;
         padding: 1rem 1.375rem;
         font-size: 0.88rem;
       }
     }
   }
 
-  @media (max-width: 833px) and (min-width: 678px) {
+  @media (max-width: 833px) {
     .about {
       &__container {
         max-width: 634px;
@@ -93,15 +99,10 @@
       &__link {
         padding: 1rem 0.81rem;
       }
-
-      &__image {
-        width: 352px;
-        height: 194px;
-      }
     }
   }
 
-  @media (max-width: 677px) and (min-width: 375px) {
+  @media (max-width: 677px) {
     .about {
       &__container {
         @include sm_margins;
@@ -127,20 +128,12 @@
         padding: 0.81rem 1.43rem;
         font-size: 0.88rem;
       }
-
-      &__image {
-        width: 352px;
-        height: 195px;
-        margin: 0 auto;
-      }
     }
   }
 
   @media (max-width: 374px) {
     .about {
       &__container {
-        @include sm_margins;
-
         flex-direction: column-reverse;
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -162,12 +155,6 @@
         padding: 0.68rem 1.3rem;
         font-size: 0.75rem;
         line-height: 0.87rem;
-      }
-
-      &__image {
-        width: 258px;
-        height: 143px;
-        margin: auto;
       }
     }
   }

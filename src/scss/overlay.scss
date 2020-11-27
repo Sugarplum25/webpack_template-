@@ -10,16 +10,7 @@
   opacity: 0;
 
   &-active {
-    top: 80px;
     display: block;
     opacity: 1;
-  }
-}
-
-@media (max-width: 677px) {
-  .overlay {
-    &-active {
-      top: 50px;
-    }
   }
 }

@@ -95,8 +95,13 @@
       @include link_reset;
 
       margin-right: 0.75rem;
-      padding: 0 1em;
+      padding: 1em;
       line-height: 1.2rem;
+
+      &:hover {
+        text-decoration: underline;
+        background: rgba(0, 15, 64, 0.12);
+      }
     }
   }
 
@@ -108,8 +113,9 @@
       width: 8px;
       height: 8px;
       margin-right: 0.5rem;
-      background: #29cc5f;
+      background: transparent;
       border-radius: 50%;
+      transition: background 1.5s ease-in-out;
     }
 
     &-link {
@@ -121,6 +127,13 @@
 
     &-sigh {
       display: none;
+      cursor: pointer;
+
+      &:hover {
+        @include shake;
+
+        animation: shake 2s ease;
+      }
     }
   }
 }

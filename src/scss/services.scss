@@ -16,10 +16,10 @@
 
   &__title {
     margin: $zero-margin;
-    color: $add-color;
+    color: $secondary-color;
     font-weight: bold;
     font-size: 3rem;
-    font-family: $add-font;
+    font-family: $secondary-color;
     line-height: 120%;
   }
 
@@ -50,7 +50,7 @@
 
   &__text {
     margin: $zero-margin;
-    color: $add-color;
+    color: $secondary-color;
     font-size: 1rem;
     line-height: 150%;
   }

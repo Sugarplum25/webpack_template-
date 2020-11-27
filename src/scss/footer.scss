@@ -26,6 +26,17 @@
 
   &__link {
     @include link_reset;
+
+    transition: color 1s ease;
+
+    &:hover {
+      color: $hover-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $focus-color;
+    }
   }
 }
 

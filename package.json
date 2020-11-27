@@ -23,7 +23,7 @@
   "author": "Masha",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
+    "@babel/cli": "^7.12.8",
     "@babel/core": "^7.11.4",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
@@ -41,7 +41,6 @@
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "postcss": "^7.0.32",
-    "postcss-focus": "^4.0.0",
     "postcss-loader": "^4.0.1",
     "postcss-preset-env": "^6.7.0",
     "pug": "^2.0.4",

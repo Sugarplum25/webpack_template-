@@ -1,0 +1,104 @@
+@import 'variables.scss';
+
+.customers {
+  background: linear-gradient(0deg, #fff, #fff);
+
+  &__container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  &__item {
+    width: 257px;
+    height: 140px;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1439px) {
+  .customers {
+    &__container {
+      max-width: 916px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .customers {
+    &__container {
+      max-width: 727px;
+    }
+
+    &__item {
+      width: 226px;
+      height: 123px;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 833px) {
+  .customers {
+    &__container {
+      max-width: 634px;
+    }
+
+    &__item {
+      width: 195px;
+      height: 106px;
+    }
+  }
+}
+
+@media (max-width: 677px) {
+  .customers {
+    &__container {
+      @include sm_margins;
+
+      padding: 2rem 0;
+    }
+
+    &__wrapper {
+      justify-content: space-evenly;
+      margin-top: 2rem;
+    }
+
+    &__item {
+      width: 164px;
+      height: 90px;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .customers {
+    &__container {
+      padding: 3.75rem 0;
+    }
+
+    &__wrapper {
+      margin-top: 1.5rem;
+    }
+
+    &__item {
+      width: 117px;
+      height: 64px;
+    }
+  }
+}

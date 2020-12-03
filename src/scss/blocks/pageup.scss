@@ -4,6 +4,9 @@
   bottom: 5rem;
   width: 30px;
   height: 30px;
+  background: url("../img/arrow-circle-up-solid.svg");
+  background-color: $hover-color;
+  border-radius: 50%;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 
@@ -17,15 +20,3 @@
 .show {
   opacity: 1;
 }
-
-// @keyframes shake {
-//   0%, 50%, 100% {
-//       transform: rotate(0deg);
-//   }
-//   10%, 30% {
-//       transform: rotate(-10deg);
-//   }
-//   20%, 40% {
-//       transform: rotate(10deg);
-//   }
-// }

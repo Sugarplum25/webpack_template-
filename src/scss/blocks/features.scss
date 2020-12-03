@@ -10,15 +10,6 @@
     padding: 5rem 0;
   }
 
-  &__title {
-    margin: $zero-margin;
-    color: $secondary-color;
-    font-weight: bold;
-    font-size: 3rem;
-    font-family: $add-font;
-    line-height: 120%;
-  }
-
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -60,20 +51,16 @@
   }
 }
 
-@media (max-width: 1439px) and (min-width: 1024px) {
+@media (max-width: 1439px) {
   .features__container {
     max-width: 916px;
   }
 }
 
-@media (max-width: 1023px) and (min-width: 834px) {
+@media (max-width: 1023px) {
   .features {
     &__container {
       max-width: 727px;
-    }
-
-    &__title {
-      font-size: 2.63rem;
     }
 
     &__subtitle {
@@ -86,28 +73,20 @@
   }
 }
 
-@media (max-width: 833px) and (min-width: 678px) {
+@media (max-width: 833px) {
   .features {
     &__container {
       max-width: 634px;
     }
-
-    &__text {
-      font-size: 0.875rem;
-    }
   }
 }
 
-@media (max-width: 677px) and (min-width: 375px) {
+@media (max-width: 677px) {
   .features {
     &__container {
       @include sm_margins;
 
       padding: 3.75rem 0;
-    }
-
-    &__title {
-      font-size: 2.25rem;
     }
 
     &__list {
@@ -126,23 +105,13 @@
       width: 164px;
       height: 164px;
     }
-
-    &__text {
-      font-size: 0.875rem;
-    }
   }
 }
 
 @media (max-width: 374px) {
   .features {
     &__container {
-      @include sm_margins;
-
       padding: 2.5rem 0;
-    }
-
-    &__title {
-      font-size: 1.75rem;
     }
 
     &__list {
@@ -161,10 +130,6 @@
     &__image {
       width: 117px;
       height: 117px;
-    }
-
-    &__text {
-      font-size: 0.875rem;
     }
   }
 }

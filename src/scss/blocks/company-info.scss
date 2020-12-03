@@ -1,0 +1,40 @@
+.information {
+  background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1439px) {
+  .information {
+    &__container {
+      max-width: 916px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .information {
+    &__container {
+      max-width: 727px;
+    }
+  }
+}
+
+@media (max-width: 833px) {
+  .information {
+    &__container {
+      max-width: 634px;
+    }
+  }
+}
+
+@media (max-width: 677px) {
+  .information {
+    &__container {
+      @include sm_margins;
+    }
+  }
+}

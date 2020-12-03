@@ -1,0 +1,33 @@
+.title {
+  margin: $zero-margin;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: $add-font;
+  line-height: 120%;
+}
+
+.title_light {
+  color: $secondary-color;
+}
+
+.title_dark {
+  color: $main-color;
+}
+
+@media (max-width: 1023px) {
+  .title {
+    font-size: 2.63rem;
+  }
+}
+
+@media (max-width: 677px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}

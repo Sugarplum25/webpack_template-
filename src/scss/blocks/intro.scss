@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding-top: 6.875rem;
     padding-bottom: 6.875rem;
+
     color: $main-color;
     font-size: $main-size;
     font-family: $main-font;
@@ -21,6 +22,7 @@
     margin: $zero-margin;
     margin-right: 3.065rem;
     margin-bottom: 1.5rem;
+
     font-weight: normal;
     font-size: 1.4rem;
     line-height: 150%;
@@ -32,15 +34,18 @@
     display: block;
     max-width: 220px;
     padding: 1.125rem 2rem;
+
     color: #fff;
     font-size: 1rem;
     line-height: 1.187rem;
     text-align: center;
+
     background: linear-gradient(0deg, #f00, #f00), linear-gradient(0deg, #2558cc, #2558cc), #40b840;
     border-radius: 100px;
 
     &:hover {
       text-decoration: underline;
+
       background: $hover-color;
     }
 
@@ -72,12 +77,14 @@
       &__heading {
         margin-right: 1.5rem;
         margin-bottom: 1.5rem;
+
         font-size: 1.125rem;
       }
 
       &__link {
         max-width: 180px;
         padding: 1rem 1.375rem;
+
         font-size: 0.88rem;
       }
     }
@@ -123,6 +130,7 @@
       &__link {
         width: 43%;
         padding: 0.81rem 1.43rem;
+
         font-size: 0.88rem;
       }
     }
@@ -143,12 +151,14 @@
       &__heading {
         margin-top: 1rem;
         margin-bottom: 0.75rem;
+
         font-size: 0.88rem;
       }
 
       &__link {
         width: 49%;
         padding: 0.68rem 1.3rem;
+
         font-size: 0.75rem;
         line-height: 0.87rem;
       }

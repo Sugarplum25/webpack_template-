@@ -4,6 +4,7 @@
   &__container {
     max-width: 1100px;
     margin: 0 auto;
+    padding: 5rem 0;
   }
 }
 
@@ -35,6 +36,14 @@
   .information {
     &__container {
       @include sm_margins;
+      padding: 3.75rem 0;
+    }
+  }
+}
+@media (max-width: 374px) {
+  .information {
+    &__container {
+      padding: 2.5rem 0;
     }
   }
 }

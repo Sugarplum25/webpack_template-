@@ -1,11 +1,15 @@
 const showPhoneStatus = () => {
   const phone = document.querySelector('.header__phone-status');
+  const green = '#29cc5f';
+  const gray = '#b3b7c6';
   // 3 - gap between GMT and Moscow Time Zone
-  const mskTime = new Date().getUTCHours() + 3;
-  const differenceInTime = (mskTime >= 10 && mskTime < 19);
-  if (differenceInTime) {
-    phone.style.background = '#808080';
+  const mskHours = new Date().getUTCHours() + 3;
+  const minutes = new Date().getMinutes();
+  const outOfWork = (mskHours < 19 && minutes <= 59);
+  const workingHours = (mskHours >= 10 && outOfWork);
+  if (workingHours) {
+    return phone.style.background = green;
   }
-  phone.style.background = '#29cc5f';
+  return phone.style.background = gray;
 };
 export default showPhoneStatus;

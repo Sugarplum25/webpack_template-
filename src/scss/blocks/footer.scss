@@ -3,9 +3,11 @@
 .footer {
   box-sizing: border-box;
   margin: $zero-margin;
+
   color: $main-color;
   font-size: $main-size;
   font-family: $main-font;
+
   background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
 
   &__container {
@@ -15,6 +17,7 @@
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.4rem 0;
+
     font-size: 0.88rem;
     line-height: 160%;
     text-align: center;
@@ -49,6 +52,7 @@
 @media (max-width: 1023px) {
   .footer__container {
     max-width: 727px;
+
     font-size: 0.75rem;
   }
 }

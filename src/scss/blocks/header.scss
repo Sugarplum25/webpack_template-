@@ -324,7 +324,7 @@
 @media (max-width: 374px) {
   .header {
     &__container {
-      @include sm_margins;
+      //@include sm_margins;
 
       height: 48px;
     }

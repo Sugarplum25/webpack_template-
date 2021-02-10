@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .information {
   background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
 
@@ -6,12 +8,72 @@
     margin: 0 auto;
     padding: 5rem 0;
   }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  &__descr {
+    margin-right: 7rem;
+    text-align: justify;
+  }
+
+  &__list {
+    padding-left: 1rem;
+  }
+
+  &__text, &__list-item {
+    margin-top: $zero-margin;
+    margin-bottom: 0.75rem;
+
+    color: $main-color;
+    font-size: $main-size;
+    font-family: $main-font;
+    line-height: 150%;
+  }
+
+  &__images-wrap {
+    width: 257px;
+    height: 160px;
+
+    margin-bottom: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url("../img/about/image_1.png");
+    }
+    &:nth-child(2) {
+      background-image: url("../img/about/image_2.png");
+    }
+    &:nth-child(3) {
+      background-image: url("../img/about/image_3.png");
+    }
+    &:nth-child(4) {
+      background-image: url("../img/about/image_4.png");
+    }
+    &:nth-child(5) {
+      background-image: url("../img/about/image_5.png");
+    }
+    &:nth-child(6) {
+      background-image: url("../img/about/image_6.png");
+    }
+  }
+
 }
+
 
 @media (max-width: 1439px) {
   .information {
     &__container {
       max-width: 916px;
+    }
+
+    &__descr {
+      margin-right: 2rem;
     }
   }
 }
@@ -21,6 +83,14 @@
     &__container {
       max-width: 727px;
     }
+
+    &__descr {
+
+      p, li {
+        font-size: .875rem;
+        line-height: 16/21;
+      }
+    }
   }
 }
 
@@ -29,21 +99,47 @@
     &__container {
       max-width: 634px;
     }
+
+    &__images-wrap {
+      width: 164px;
+      height: 102px;
+    }
   }
 }
 
 @media (max-width: 677px) {
   .information {
     &__container {
-      @include sm_margins;
+      @include sm_margins; 
       padding: 3.75rem 0;
     }
+    
+    &__content {
+      flex-direction: column;
+    }
+
+    &__descr {
+      order: 2;
+      margin-right: $zero-margin;
+    }
+
+    &__images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
   }
 }
 @media (max-width: 374px) {
   .information {
     &__container {
-      padding: 2.5rem 0;
+      padding: 2rem 0;
+    }
+
+    &__images-wrap {
+      width: 117px;
+      height: 73px;
     }
   }
 }

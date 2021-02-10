@@ -44,22 +44,22 @@
     background-size: cover;
 
     &:nth-child(1) {
-      background-image: url("../img/about/image_1.png");
+      background-image: url("/img/about/image_1.png");
     }
     &:nth-child(2) {
-      background-image: url("../img/about/image_2.png");
+      background-image: url("/img/about/image_2.png");
     }
     &:nth-child(3) {
-      background-image: url("../img/about/image_3.png");
+      background-image: url("/img/about/image_3.png");
     }
     &:nth-child(4) {
-      background-image: url("../img/about/image_4.png");
+      background-image: url("/img/about/image_4.png");
     }
     &:nth-child(5) {
-      background-image: url("../img/about/image_5.png");
+      background-image: url("/img/about/image_5.png");
     }
     &:nth-child(6) {
-      background-image: url("../img/about/image_6.png");
+      background-image: url("/img/about/image_6.png");
     }
   }
 
@@ -113,7 +113,7 @@
       @include sm_margins; 
       padding: 3.75rem 0;
     }
-    
+
     &__content {
       flex-direction: column;
     }

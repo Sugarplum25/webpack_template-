@@ -1,26 +1,25 @@
-header(class="header")
+header.header
 
-    div(class="header__container")
+    .header__container
 
-        -let logo_img = "img/group.svg";
-        div(class="header__logo")
-            a(href="index.html" class="header__link")
-                img(src= logo_img, alt="EnergoValves_logo" class="header__image")
-            a(href="index.html" class="header__text") 
-                p(class="header__text-name") EnergoValves 
-                p(class="header__text-caption") ЭНЕРГИЯ ВОЗМОЖНОСТЕЙ
+        .header__logo
+            a.header__link(href="index.html")
+                img.header__image(src='img/group.svg', alt="ЭнергоВэлс")
+            a.header__text(href="index.html") 
+                p.header__text-name EnergoValves 
+                p.header__text-caption ЭНЕРГИЯ ВОЗМОЖНОСТЕЙ
 
-        div(class="header__burger")
-            span(class="header__burger-line")
-            span(class="header__burger-line")
+        .header__burger
+            span.header__burger-line
+            span.header__burger-line
         
-        nav(class="header__menu")
-            a(href="company_catalog.html" class="header__menu-item") Каталог
-            a(href="company_about.html" class="header__menu-item") О компании
-            a(href="company_geography.html" class="header__menu-item") Георграфия проектов 
-            a(href="company_contacts.html" class="header__menu-item") Контакты       
+        nav.header__menu
+            a.header__menu-item(href="company_catalog.html") Каталог
+            a.header__menu-item(href="company_about.html") О компании
+            a.header__menu-item(href="company_geography.html") География проектов 
+            a.header__menu-item(href="company_contacts.html") Контакты       
 
-        div(class="header__phone")
-            div(class="header__phone-status")
-            a(href="tel:84994264505" class="header__phone-link") 8 499 426-45-05
-            img(src="img/phone.svg", alt="phone_sigh" class="header__phone-sigh")
+        .header__phone
+            .header__phone-status
+            a.header__phone-link(href="tel:84994264505") 8 499 426-45-05
+            img.header__phone-sigh(src="img/phone.svg", alt="позвонить")

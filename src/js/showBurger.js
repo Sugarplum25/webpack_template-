@@ -3,6 +3,7 @@ const showBurger = () => {
   const mainMenu = document.querySelector('.header__menu');
   const overlay = document.querySelector('.overlay');
   const body = document.querySelector('body');
+  
   burger.addEventListener('click', () => {
     burger.classList.toggle('header__burger-active');
     mainMenu.classList.toggle('header__menu-active');

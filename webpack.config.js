@@ -11,7 +11,7 @@ const PAGES_DIR = `${PATHS.src}/pug/pages/`;
 const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith('.pug'));
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -31,7 +31,7 @@ module.exports = {
         test: /\.scss$/, use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [{ loader: 'file-loader', options: { name: '[path][name].[ext]' } }],
       },
     ],
@@ -51,6 +51,10 @@ module.exports = {
         from: 'src/img',
         to: 'img',
       },
+      {
+        from: 'src/fonts',
+        to: 'fonts',
+      },
     ]),
   ],
-};
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Raleway-Bold.ttf');
+}
+
+$main-font: 'Roboto', sans-serif;
+$add-font: 'Raleway', sans-serif;
+
+$base-size: 16; // Default
+
+@function toRem($pixels, $context: $base-size) {
+  @return #{$pixels/$context}rem;
+}
+

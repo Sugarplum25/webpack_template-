@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: $zero-margin;
 
+  flex-grow: 0;
+
   color: $main-color;
   font-size: $main-size;
   font-family: $main-font;

@@ -2,6 +2,9 @@
 
 .information {
   background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
+  font-family: $main-font;
+  font-size: $main-size;
+  color: $main-color;
 
   &__container {
     max-width: 1100px;
@@ -21,6 +24,7 @@
   }
 
   &__list {
+    margin-top: 1rem;
     padding-left: 1rem;
   }
 
@@ -28,10 +32,7 @@
     margin-top: $zero-margin;
     margin-bottom: 0.75rem;
 
-    color: $main-color;
-    font-size: $main-size;
-    font-family: $main-font;
-    line-height: 150%;
+    line-height: 1.5;
   }
 
   &__images-wrap {
@@ -44,22 +45,22 @@
     background-size: cover;
 
     &:nth-child(1) {
-      background-image: url("/img/about/image_1.png");
+      background-image: url('/img/about/image_1.png');
     }
     &:nth-child(2) {
-      background-image: url("/img/about/image_2.png");
+      background-image: url('/img/about/image_2.png');
     }
     &:nth-child(3) {
-      background-image: url("/img/about/image_3.png");
+      background-image: url('/img/about/image_3.png');
     }
     &:nth-child(4) {
-      background-image: url("/img/about/image_4.png");
+      background-image: url('/img/about/image_4.png');
     }
     &:nth-child(5) {
-      background-image: url("/img/about/image_5.png");
+      background-image: url('/img/about/image_5.png');
     }
     &:nth-child(6) {
-      background-image: url("/img/about/image_6.png");
+      background-image: url('/img/about/image_6.png');
     }
   }
 
@@ -88,7 +89,6 @@
 
       p, li {
         font-size: .875rem;
-        line-height: 16/21;
       }
     }
   }
@@ -120,6 +120,7 @@
 
     &__descr {
       order: 2;
+      line-height: toRem(21);
       margin-right: $zero-margin;
     }
 

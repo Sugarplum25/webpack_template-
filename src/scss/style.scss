@@ -1,5 +1,14 @@
+@import '~normalize.css';
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 @import 'variables.scss';
 @import 'mixins.scss';
+@import 'typography.scss';
 @import 'blocks/title.scss';
 @import 'blocks/header.scss';
 @import 'blocks/overlay.scss';
@@ -10,3 +19,4 @@
 @import 'blocks/footer.scss';
 @import 'blocks/pageup.scss';
 @import 'blocks/company-info.scss';
+@import 'blocks/company-contacts.scss';

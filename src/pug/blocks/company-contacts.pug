@@ -5,12 +5,16 @@ section.contacts
 
         .contacts__wrapper
             .contacts__data
-                p.contacts__descr ТЕЛЕФОН
-                a.contacts__phone(href="tel:84994264505") 8 499 426 45 05
-                p.contacts__descr Адрес эл. почты
-                a.contacts__mail(href="mailto:info@energovalves.ru") info@energovalves.ru
-                p.contacts__descr ОФИС
-                address.contacts__addr
-                | 115280, Российская Федерация, г. Москва, ул. Ленинская Слобода, дом 26, БЦ&nbsp;&laquo;Омега-2&raquo;, корпус&nbsp;С, офис 419
+                div
+                    p.contacts__descr ТЕЛЕФОН
+                    a.contacts__phone(href="tel:84994264505") 8 499 426 45 05
+                div    
+                    p.contacts__descr Адрес эл. почты
+                    a.contacts__mail(href="mailto:info@energovalves.ru") info@energovalves.ru
+                div    
+                    p.contacts__descr ОФИС
+                    address.contacts__addr
+                    | 115280, Российская Федерация, г. Москва, ул. Ленинская Слобода, дом 26, БЦ&nbsp;&laquo;Омега-2&raquo;, корпус&nbsp;С, офис 419
             .contacts__map
-                #map <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3775a0d721479a04d06fafd8ddf888f04b5415257a1010f48591f8db246eb2df&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+                .contacts__map-block
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3775a0d721479a04d06fafd8ddf888f04b5415257a1010f48591f8db246eb2df&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
